@@ -1,0 +1,12 @@
+price = int(input('Enter the amount in PLN: '))
+amount5, amount2, amount1 = 0, 0, 0
+while price >= 5:
+    price -= 5
+    amount5 += 1
+while price >= 2:
+    price -= 2
+    amount2 += 1
+while price >= 1:
+    price -= 1
+    amount1 += 1
+print('The amount of PLN 18 in coins: ', f'5 zł – {amount5}', f'2 zł – {amount2}', f'1 zł – {amount1}', sep='\n')
